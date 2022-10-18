@@ -46,10 +46,10 @@ type
       FParent: TdJSON;
       FIsList: boolean;
       FIsKeyValue: boolean;
-      FIsDict: boolean;
+      FIsDict: boolean; // True:TDictionary or False:TList
       FValue: Variant;
-      FItems: TdJSONItems;
-      FListItems: TdJSONListItems;
+      FItems: TdJSONItems; //TDictionary
+      FListItems: TdJSONListItems; // TList
       function GetJSONByNameOrIndex(const AData: variant): TdJSON;
       function GetString: string;
       function GetInteger: integer;
